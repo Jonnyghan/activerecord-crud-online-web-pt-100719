@@ -82,7 +82,7 @@ def can_update_using_update_method
   # Update movie title to "Wat, huh?"
   Movie.create(title: "Wat?")
   m = Movie.find_by(title: "Wat?")
-  m.update(title)
+  m.update(title:"Wat,Huh?")
 end
 
 def can_update_multiple_items_at_once
